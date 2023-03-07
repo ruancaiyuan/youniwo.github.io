@@ -1,0 +1,119 @@
+<!-- Google fonts -->
+<link href=//fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+<!-- Template CSS Style link -->
+<link rel="stylesheet" href="../assets/css/style-starter.css">
+<link rel="stylesheet" href="../assets/css/imageQc.css">
+<!-- footer -->
+<footer class="w3l-footer9">
+    <div class="footer-inner-main py-5">
+        <div class="container pt-lg-5 pt-md-4 pt-2 pb-2">
+            <div class="row">
+                <div class="col-lg-4 sub-one-left pe-lg-5">
+                    <h6>About </h6>
+                    <p class="footer-phny">
+                        我们专注于海外版权引进中国市场，为具有最强推广实力的全球音乐家提供服务，并为国内外音乐家品牌提供免费音乐发行。
+                        下属领域涉及音乐发行与推广、音乐制作、卡拉OK等 业务。
+                    </p>
+
+                    <div>
+                        <script>
+                            let i = 0;
+                            var indexs;
+
+                            function reP(index) {
+                                i--;
+                                indexs = index - 1;
+                                document.getElementById('oImg').style.display = "block";
+                                $("#oImg").attr("src", "../assets/images/QCode" + index + ".png");
+                            }
+                            window.onload = function () {
+                                const myDiv = document.getElementById("oImg");
+                                document.addEventListener("click", function () {
+                                    myDiv.style.display = "none";
+                                });
+                                document.getElementsByClassName("social").item(indexs).addEventListener("click", function (event) {
+                                    event = event || window.event;
+                                    event.stopPropagation();
+                                });
+                            };
+                        </script>
+                    </div>
+                    <div class="columns-2 mt-lg-5 mt-4">
+                        <img src='' id="oImg" style='display:none' alt="二维码">
+                        <ul class="social">
+                            <li><a href="#facebook" class="aBtn"><span class="fab fa-facebook-f"></span></a>
+                            </li>
+                            <li><a href="#twitter" class="aBtn"><span class="fab fa-twitter"></span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:" onclick="reP(3)" class="aBtn"><span class="fab fa-qq"></span> </a>
+                            </li>
+                            <li>
+                                <a href="javascript:" onclick="reP(4)" class="aBtn"><span class="fab fa-weixin"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6 sub-two-right mt-lg-0 mt-5">
+                    <h6>Links</h6>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6 sub-two-right mt-lg-0 mt-5">
+                    <h6>Explore</h6>
+                    <ul>
+                        <li><a href="#support">Support</a></li>
+                        <li><a href="#privacypolicy">Privacy policy</a></li>
+                        <li><a href="#offers">Offers</a></li>
+                        <li><a href="#support">Support</a></li>
+                        <li><a href="#career">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 sub-one-left mt-lg-0 mt-5">
+                    <h6>Twitter Feed</h6>
+                    <ul>
+                        <li class="w3tweet-holder-grids">
+                            <div class="w3-twitter-icon"><i class="fab fa-twitter"></i></div>
+                            <div class="w3tweet-text">
+                                暂无.......
+<!--                                <a target="_blank" href="#twitter">@Honynilf</a> Hi-->
+<!--                                <a target="_blank" href="#twitter">@Honynilf</a> , can you please submit a ticket at-->
+<!--                                <a target="_blank" href="#twitter">https://v.co/ij123A34J45A</a> <br> 1 year ago.-->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-footer mt-lg-5 mt-sm-4 mt-2 text-center">
+                <p class="copy-text">Copyright &copy; 2023 河南有你我科技有限公司保留所有权利. </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- //footer -->
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script>
+    // 获取弹窗
+    var modal = document.getElementById('myModal');
+
+    // 获取图片插入到弹窗 - 使用 "alt" 属性作为文本部分的内容
+    var img = document.getElementById('myImg');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // 获取 <span> 元素，设置关闭按钮
+    var span = document.getElementsByClassName("close")[0];
+
+    // 当点击 (x), 关闭弹窗
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+</script>

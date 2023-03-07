@@ -1,0 +1,32 @@
+<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css"/><!--CSS RESET-->
+<link rel="stylesheet" type="text/css" href="../assets/css/main.min.css">
+<style>
+    .htmleaf-content {
+        height:300px;
+    }
+    .htmleaf-content {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000000;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #e74c3c, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+</style>
+<div class="htmleaf-content">
+    <div class="ready-player-1">
+        <audio crossorigin>
+            <source src="../assets/audio/4hi%20(JSS)%20(Remix).ogg" type="audio/mpeg">
+        </audio>
+    </div>
+</div>
+
+<script src="../assets/js/app.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new GreenAudioPlayer('.ready-player-1');
+    });
+</script>

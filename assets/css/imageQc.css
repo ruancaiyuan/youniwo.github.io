@@ -1,0 +1,15 @@
+#oImg {
+    position: fixed;
+    z-index: 100;
+    text-align: center;
+    top: 190px;
+    left: 410px;
+    height: 100px;
+    width: 100px;
+}
+
+/*日期*/
+.tianqi {
+    font-size: 30px;
+    font-family: "微软雅黑",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
